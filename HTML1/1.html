@@ -1,0 +1,13 @@
+<input class="ipt1" type="text" />
+<button class="submit1">Divisible by 2</button>
+<hr />
+<script>
+    const input1 = document.querySelector('.ipt1')
+    const sub = document.querySelector('.submit1')
+    sub.onclick = () => {
+        const val = +input1.value
+        if(+val % 2 === 0) {
+        input1.value = 0
+        }
+    }
+</script>

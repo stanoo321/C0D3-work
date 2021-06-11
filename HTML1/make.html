@@ -1,0 +1,12 @@
+<input class="inp1" type="text">
+<button class="sub1">make divisible 2 become 0</button>
+<script>
+    const input1 = document.querySelector('.inp1')
+    const button = document.querySelector('.sub1')
+    button.onclick = () => {
+        const val = input1.value
+        if (+val % 2 === 0) {
+        input1.value = 0
+        }
+    }
+</script>

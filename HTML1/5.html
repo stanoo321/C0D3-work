@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input class="ipt1" type="text" />
+    <input class="ipt2" type="text" />
+    <button class="sub1">Gen</button>
+    <button class="sub2">Sub</button>
+    <script>
+        const input1 = document.querySelector('.ipt1')
+        const input2 = document.querySelector('.ipt2')
+        const btn1 = document.querySelector('.sub1')
+        const btn2 = document.querySelector('.sub2')
+        const solution = (a,b) => {
+            return () => {
+                return a + b
+            }
+        }
+
+        let fun1
+        btn1.onclick = () => {
+            const v1 = input1.value 
+            const v2 = input2.value 
+
+            fun1 = solution(+v1, +v2)
+        }
+        btn2.onclick = () => {
+            alert(fun1())
+        }
+    </script>
+</body>
+</html>

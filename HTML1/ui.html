@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input class="inpt1" type="text" />
+    <input class="inpt2" type="text" />
+    <button class="submit1">SUM BITCHES!!!</button>
+    <hr />
+    <script>
+        const input1 = document.querySelector('.inpt1')
+        const input2 = document.querySelector('.inpt2')
+        const button1 = document.querySelector('.submit1')
+        button1.onclick = () => {
+            const input1Value = +input1.value
+            const input2Value = +input2.value
+            alert(input1Value + input2Value)
+        }
+
+    </script>
+</body>
+</html>

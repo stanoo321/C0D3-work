@@ -1,0 +1,13 @@
+<input class="ipt1" type="text" />
+<input class="ipt2" type="text" />
+<button class="submit1">SUM!!!</button>
+<script>
+    const btn = document.querySelector('.submit1')
+    const input1 = document.querySelector('.ipt1')
+    const input2 = document.querySelector('.ipt2')
+    btn.onclick = () => {
+        const input1Value = +input1.value
+        const input2Value = +input2.value
+        alert(input1Value + input2Value)
+    }
+</script>

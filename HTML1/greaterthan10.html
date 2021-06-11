@@ -1,0 +1,19 @@
+<input class="inp1" type="text">
+<input class="inp2" type="text">
+<button class="submit1">SUM BIG 10!?!?!?!?</button>
+<hr />
+<script>
+    const input1 = document.querySelector('.inp1')
+    const input2 = document.querySelector('.inp2')
+    const button = document.querySelector('.submit1')
+    button.onclick = () => {
+        const val = +input1.value
+        const val2 = +input2.value
+        if(val + val2 > 10) {
+            alert("HELL YEAH")
+        } else {
+            alert("HELL NO")
+        }
+     
+    }
+</script>
